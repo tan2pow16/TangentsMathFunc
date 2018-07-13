@@ -8,6 +8,9 @@
  * Tangent's Math Function V1.01
  *  Copyright (c) 2018, tangent65536. All rights reserved.
  *
+ * The code may be found on my GitHub repository:
+ *  https://github.com/tan2pow16/TangentsMathFunc
+ *
  * Usage:
  *    MathFunction("f(x, y, ...)", "<operations>");
  */
