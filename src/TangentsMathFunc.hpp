@@ -14,6 +14,7 @@
 #include "util/LinkedNode.hpp"
 #include "util/HashTable.hpp"
 #include "misc/StringWrap.hpp"
+#include "misc/TFException.hpp"
 #include "Operators.hpp"
 
 #ifndef __TANGENT_MATH_FUNC__
