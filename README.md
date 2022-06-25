@@ -15,7 +15,7 @@ double val1 = func_f.invoke({1, 1});
 Nested function calls referencing previously declared custom functions are supported, e.g. `g(x) = f(x + 1, x - 1) / f(1 - x, 1 + x)`:
 ```C++
 MathFunction func_g("g(x)", "f(x + 1, x - 1) / f(1 - x, 1 + x)");
-double val2 = func_g.invoke({1, 1});
+double val2 = func_g.invoke({0});
 ```
 
 The following built-in functions are supported:
