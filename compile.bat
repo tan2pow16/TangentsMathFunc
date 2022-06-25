@@ -8,6 +8,8 @@ set LDFLAGS=-static -lgcc -lpthread
 
 set PATH=%PATH%;%GCC_PATH%\bin;%GCC_PATH%\libexec\gcc\x86_64-w64-mingw32\8.1.0;%GCC_PATH%\x86_64-w64-mingw32\bin
 
+mkdir %~dp0cache
+
 cd %~dp0src\util
 g++ -c %CPPFLAGS% -o %~dp0cache\LinkedNode.o LinkedNode.cpp
 g++ -c %CPPFLAGS% -o %~dp0cache\LinkedStack.o LinkedStack.cpp
@@ -23,6 +25,9 @@ g++ -c %CPPFLAGS% -o %~dp0cache\TangentsMathFunc.o TangentsMathFunc.cpp
 
 :: Test target.
 set TARGET=test_main
+
+mkdir %~dp0test\cache
+mkdir %~dp0test\bin
 
 cd %~dp0test\src
 g++ %CPPFLAGS% -c -o %~dp0test\cache\%TARGET%.o %TARGET%.cpp -I%~dp0src
